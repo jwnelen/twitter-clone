@@ -1,4 +1,4 @@
-import ImageIcon from "./icons/image";
+import {ImageIcon, GIFIcon, PollIcon, SmileyIcon, PlanIcon, LocationIcon} from "./icons";
 import Button from "./UI/Button";
 
 const TweetComposer = () => {
@@ -12,11 +12,11 @@ const TweetComposer = () => {
           </div>
           <div className={"flex gap-4"}>
             <ImageIcon></ImageIcon>
-            <ImageIcon></ImageIcon>
-            <ImageIcon></ImageIcon>
-            <ImageIcon></ImageIcon>
-            <ImageIcon></ImageIcon>
-            <ImageIcon></ImageIcon>
+            <GIFIcon></GIFIcon>
+            <PollIcon></PollIcon>
+            <SmileyIcon></SmileyIcon>
+            <PlanIcon></PlanIcon>
+            <LocationIcon></LocationIcon>
             <div className={"grow"}></div>
             <Button className={"mr-4 mb-2"}>Tweeten</Button>
           </div>

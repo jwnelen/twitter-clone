@@ -12,6 +12,11 @@ import TwitterBlueIcon from "./twitterBlue";
 import TwitterLogo from "./twitterLogo";
 import VerifiedIcon from "./verified";
 import NewTweetIcon from "./newTweet";
+import GIFIcon from "./GIF";
+import PollIcon from "./poll";
+import SmileyIcon from "./smiley";
+import PlanIcon from "./plan";
+import LocationIcon from "./location";
 
 export {
   HashtagIcon,
@@ -27,4 +32,9 @@ export {
   TwitterLogo,
   VerifiedIcon,
   NewTweetIcon,
+  GIFIcon,
+  PollIcon,
+  SmileyIcon,
+  PlanIcon,
+  LocationIcon
 }
