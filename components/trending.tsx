@@ -1,11 +1,13 @@
 import React from "react";
 import TreeDots from "@/components/icons/treeDots";
 
-const TrendingItem = ({
-                        topText,
-                        hashtag,
-                        amount_tweets
-                      }: { topText: string, hashtag: string, amount_tweets: number }) => {
+interface TrendingItemProps {
+  topText: string,
+  hashtag: string,
+  amount_tweets: number
+}
+
+const TrendingItem = ({topText, hashtag, amount_tweets}: TrendingItemProps) => {
   const tweetText = amount_tweets > 1 ? "tweets" : "tweet"
   const displayText = `${amount_tweets} ${tweetText}`
 
@@ -25,9 +27,9 @@ const TrendingItem = ({
 
 const Trending = () => {
   return (
-    <div className="min-h-screen bg-gray-700 p-3 rounded-2xl space-y-4">
+    <div className="bg-gray-700 p-3 rounded-2xl space-y-4">
       <span className={"text-xl font-bold"}>Trends voor jou</span>
-      {Array.from(Array(10)).map((_, index) => {
+      {Array.from(Array(5)).map((_, index) => {
         return <TrendingItem key={index}
                              topText={'Trending in Duitsland'}
                              hashtag={"#test"}

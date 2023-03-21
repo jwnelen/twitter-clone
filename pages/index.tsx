@@ -6,6 +6,7 @@ import Trending from "@/components/trending";
 import SearchBar from "@/components/searchBar";
 import Feed from "@/components/feed";
 import HomeHeader from "@/components/homeHeader";
+import WhoToFollow from "@/components/toFollow";
 
 
 export default function Home() {
@@ -26,17 +27,19 @@ export default function Home() {
 
           <div className="col-span-7 grid grid-cols-5 divide-x divide-gray-700 overflow-y-scroll">
             {/* Feed */}
-            <div className="col-span-3">
+            <div className="col-span-3 relative">
               <div className="divide-y divide-gray-700">
                 <HomeHeader></HomeHeader>
                 <TweetComposer></TweetComposer>
                 <Feed></Feed>
+                <Feed></Feed>
               </div>
             </div>
             {/* TRENDING */}
-            <div className="col-span-2 px-8 space-y-4 relative">
+            <div className="col-span-2 px-8 space-y-4">
               <SearchBar/>
               <Trending/>
+              <WhoToFollow/>
             </div>
           </div>
         </div>

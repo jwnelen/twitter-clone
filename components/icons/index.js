@@ -10,7 +10,7 @@ import SaveIcon from "./save";
 import TreeDots from "./treeDots";
 import TwitterBlueIcon from "./twitterBlue";
 import TwitterLogo from "./twitterLogo";
-
+import VerifiedIcon from "./verified";
 export {
   HashtagIcon,
   HomeIcon,
@@ -22,5 +22,6 @@ export {
   SaveIcon,
   TreeDots,
   TwitterBlueIcon,
-  TwitterLogo
+  TwitterLogo,
+  VerifiedIcon
 }
