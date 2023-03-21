@@ -34,7 +34,7 @@ export default function Home() {
               </div>
             </div>
             {/* TRENDING */}
-            <div className="col-span-2 px-5 space-y-4 relative">
+            <div className="col-span-2 px-8 space-y-4 relative">
               <SearchBar/>
               <Trending/>
             </div>
