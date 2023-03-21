@@ -3,12 +3,10 @@ import clsx from "clsx";
 
 type Ref = HTMLButtonElement;
 
-interface ButtonOptions {
+type ButtonProps = {
+  className?: string;
+  children: React.ReactNode;
 }
-
-export type ButtonProps = React.DetailedHTMLProps<
-  React.ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement> & ButtonOptions;
 
 const Button = forwardRef<Ref, ButtonProps>((props, ref) => {
   const {className, children, ...rest} = props;

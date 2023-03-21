@@ -11,6 +11,8 @@ import TreeDots from "./treeDots";
 import TwitterBlueIcon from "./twitterBlue";
 import TwitterLogo from "./twitterLogo";
 import VerifiedIcon from "./verified";
+import NewTweetIcon from "./newTweet";
+
 export {
   HashtagIcon,
   HomeIcon,
@@ -23,5 +25,6 @@ export {
   TreeDots,
   TwitterBlueIcon,
   TwitterLogo,
-  VerifiedIcon
+  VerifiedIcon,
+  NewTweetIcon,
 }
