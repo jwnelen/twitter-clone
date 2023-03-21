@@ -1,6 +1,5 @@
-import React from "react";
-import ImageIcon from "@/components/icons/image";
-import Button from "@/components/UI/Button";
+import ImageIcon from "./icons/image";
+import Button from "./UI/Button";
 
 const TweetComposer = () => {
   return (
@@ -19,7 +18,7 @@ const TweetComposer = () => {
             <ImageIcon></ImageIcon>
             <ImageIcon></ImageIcon>
             <div className={"grow"}></div>
-            <Button className={"mr-4"}>Tweeten</Button>
+            <Button className={"mr-4 mb-2"}>Tweeten</Button>
           </div>
         </div>
       </div>
