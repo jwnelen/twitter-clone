@@ -4,6 +4,7 @@ import TwitterLogo from "@/components/icons/twitterLogo";
 import HomeIcon from "@/components/icons/home";
 import TreeDots from "@/components/icons/treeDots";
 import TweetComposer from "@/components/tweetComposer";
+import Button from "@/components/UI/Button";
 
 const NavBarItem = ({text, isActive}: { text: string, isActive: boolean }) => {
   return (
@@ -42,9 +43,7 @@ export default function Home() {
             <NavBarItem isActive={false} text="Profiel"></NavBarItem>
             <NavBarItem isActive={false} text="Meer"></NavBarItem>
             <div className={"mr-10"}>
-              <button className={"btn py-3 px-4 w-full rounded-3xl bg-blue-400"}>
-                Tweeten
-              </button>
+              <Button className={"px-5 py-3 w-full"}>Tweeten</Button>
             </div>
             {/* a div to have the empty space*/}
             <div className={"min-h-min grow"}></div>
@@ -84,7 +83,6 @@ export default function Home() {
               </div>
               <div>
                 <TweetComposer></TweetComposer>
-                Tweet Component
               </div>
               <div>
                 List of tweets
