@@ -24,8 +24,9 @@ export default function Home() {
           <div className={"col-span-1 lg:col-span-1 xl:col-span-2 relative overflow-auto"}>
             <Navbar></Navbar>
           </div>
-
-          <div className="col-span-8 lg:col-span-8 xl:col-span-7 grid grid-cols-5 divide-x divide-gray-700 overflow-y-scroll">
+          <div className="col-span-8 lg:col-span-8 xl:col-span-7 grid grid-cols-5
+            max-w-screen-sm md:max-w-full:md lg:max-w-full
+            lg:divide-x lg:divide-gray-700 overflow-y-scroll">
             {/* Feed */}
             <div className="col-span-7 lg:col-span-3 relative">
               <div className="divide-y divide-gray-700">
