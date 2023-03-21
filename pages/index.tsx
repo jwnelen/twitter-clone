@@ -24,19 +24,17 @@ export default function Home() {
             <Navbar></Navbar>
           </div>
 
-          <div className="col-span-7 grid grid-cols-3 overflow-y-scroll">
+          <div className="col-span-7 grid grid-cols-5 divide-x divide-gray-700 overflow-y-scroll">
             {/* Feed */}
-            <div className="col-span-2">
-              <div className={"divide-y divide-gray-700"}>
-                <div className={"fixed top-0"}>
-                  <HomeHeader></HomeHeader>
-                </div>
+            <div className="col-span-3">
+              <div className="divide-y divide-gray-700">
+                <HomeHeader></HomeHeader>
                 <TweetComposer></TweetComposer>
                 <Feed></Feed>
               </div>
             </div>
             {/* TRENDING */}
-            <div className="col-span-1 px-5 space-y-4 relative">
+            <div className="col-span-2 px-5 space-y-4 relative">
               <SearchBar/>
               <Trending/>
             </div>
