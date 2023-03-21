@@ -31,7 +31,7 @@ const PersonItem = ({person}: { person: Person }) => {
 
   return (
     <div className={"flex space-x-3 hover:bg-gray-600 cursor-pointer px-4 py-2"}>
-      <div className={"rounded-full bg-gray-400 w-10 h-10"}></div>
+      <div className={"rounded-full bg-darkgray-500 w-10 h-10"}></div>
       <div className={"flex grow flex-col"}>
         <div className={"font-bold flex items-center space-x-1"}>
           <span>{name} </span>
@@ -47,7 +47,7 @@ const PersonItem = ({person}: { person: Person }) => {
 
 const WhoToFollow = () => {
   return (
-    <div className="bg-gray-700 rounded-2xl space-y-3 overflow-hidden">
+    <div className="bg-darkgray-500 rounded-2xl space-y-3 overflow-hidden">
       <div className={"text-xl font-bold px-3 pt-3"}>Wie te volgen</div>
       {people.map((p, index) => {
         return <PersonItem key={index}

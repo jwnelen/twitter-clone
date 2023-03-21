@@ -1,5 +1,5 @@
 import React from "react";
-import TreeDots from "@/components/icons/treeDots";
+import {TreeDots} from "@/components/icons";
 
 interface TrendingItemProps {
   topText: string,
@@ -12,7 +12,7 @@ const TrendingItem = ({topText, hashtag, amount_tweets}: TrendingItemProps) => {
   const displayText = `${amount_tweets} ${tweetText}`
 
   return (
-    <div className={"flex justify-between hover:bg-gray-600 cursor-pointer p-3"}>
+    <div className={"flex justify-between hover:bg-gray-600 cursor-pointer px-4 py-3"}>
       <div className={"flex flex-col"}>
         <span className={"text-sm text-gray-400"}>{topText}</span>
         <span className={"font-bold"}>{hashtag}</span>
@@ -27,8 +27,8 @@ const TrendingItem = ({topText, hashtag, amount_tweets}: TrendingItemProps) => {
 
 const Trending = () => {
   return (
-    <div className="bg-gray-700 rounded-2xl overflow-hidden">
-      <div className={"text-xl font-bold px-3 pt-2"}>Trends voor jou</div>
+    <div className="bg-darkgray-500 rounded-2xl overflow-hidden">
+      <div className={"text-xl font-bold px-4 pt-4"}>Trends voor jou</div>
       {Array.from(Array(5)).map((_, index) => {
         return <TrendingItem key={index}
                              topText={'Trending in Duitsland'}

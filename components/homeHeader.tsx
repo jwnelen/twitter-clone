@@ -12,7 +12,7 @@ const HomeHeader = () => {
           <div className="font-bold">
             Voor jou
           </div>
-          <div className="bg-blue-500 h-1 mt-2 rounded-xl"></div>
+          <div className="bg-blue-500 h-1 mt-3 rounded-xl"></div>
         </div>
         <div>
           Volgend

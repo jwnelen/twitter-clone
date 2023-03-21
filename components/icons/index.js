@@ -17,6 +17,8 @@ import PollIcon from "./poll";
 import SmileyIcon from "./smiley";
 import PlanIcon from "./plan";
 import LocationIcon from "./location";
+import SearchIcon from "./search";
+import CrossIcon from './cross';
 
 export {
   HashtagIcon,
@@ -36,5 +38,7 @@ export {
   PollIcon,
   SmileyIcon,
   PlanIcon,
-  LocationIcon
+  LocationIcon,
+  SearchIcon,
+  CrossIcon
 }

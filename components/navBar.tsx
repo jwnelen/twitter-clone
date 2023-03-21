@@ -29,7 +29,6 @@ const NavBarItem = ({text, isActive, CurrentIcon}
 }
 
 const Navbar = () => {
-
   const NewTweetButton = () => {
     return <div className={"xl:mr-10 pt-5 xl:w-full"}>
       <Button className={"hidden xl:block xl:min-w-full px-5 py-3"}>Tweeten</Button>
@@ -38,9 +37,10 @@ const Navbar = () => {
       </Button>
     </div>
   }
+
   return (
     <div className={"absolute left-0 right-0 top-0"}>
-      <div className="overflow-y-scroll min-h-screen max-h-screen space-y-6
+      <div className="overflow-y-scroll min-h-screen max-h-screen space-y-5
           flex flex-col items-end xl:items-start p-4">
         <div className={"mb-2 pr-4 xl:pr-0"}>
           <TwitterLogo></TwitterLogo>
