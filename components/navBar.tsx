@@ -31,9 +31,9 @@ const NavBarItem = ({text, isActive, CurrentIcon}
 const Navbar = () => {
 
   const NewTweetButton = () => {
-    return <div className={"xl:mr-10 pt-5"}>
-      <Button className={"hidden xl:block px-5 py-3 w-full"}>Tweeten</Button>
-      <Button className={"block xl:hidden rounded-full pt-4 pb-4"}>
+    return <div className={"xl:mr-10 pt-5 xl:w-full"}>
+      <Button className={"hidden xl:block xl:min-w-full px-5 py-3"}>Tweeten</Button>
+      <Button className={"xl:hidden rounded-full pt-4 pb-4"}>
         <NewTweetIcon></NewTweetIcon>
       </Button>
     </div>
@@ -57,22 +57,24 @@ const Navbar = () => {
 
         {/* a div to have the empty space*/}
         <div className={"grow"}></div>
-        <div className={"rounded-full bg-gray-400 min-w-min min-h-min w-20 h-20"}></div>
+        <div className={"w-full block xl:hidden"}>
+          <div className={"rounded-full bg-gray-400 min-w-min min-h-min w-12 h-12 ml-auto mr-2"}></div>
+        </div>
 
-        {/*<div className={"flex space-x-2 items-center w-full"}>*/}
-        {/*  <div className={"rounded-full bg-gray-400 w-10 h-10"}></div>*/}
-        {/*  <div className={"hidden xl:flex xl:grow flex-col"}>*/}
-        {/*        <span className={"font-bold"}>*/}
-        {/*          Jeroen*/}
-        {/*        </span>*/}
-        {/*    <span className={"text-gray-400"}>*/}
-        {/*          @Jeroen2232*/}
-        {/*        </span>*/}
-        {/*  </div>*/}
-        {/*  <div className={"hidden xl:block"}>*/}
-        {/*    <TreeDots></TreeDots>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div className={"hidden xl:flex space-x-2 items-center w-full"}>
+          <div className={"rounded-full bg-gray-400 w-10 h-10"}></div>
+          <div className={" xl:flex xl:grow flex-col"}>
+                <span className={"font-bold"}>
+                  Jeroen
+                </span>
+            <span className={"text-gray-400"}>
+                  @Jeroen2232
+                </span>
+          </div>
+          <div className={"hidden xl:block"}>
+            <TreeDots></TreeDots>
+          </div>
+        </div>
       </div>
     </div>
   )
