@@ -1,9 +1,31 @@
 import {ImageIcon, GIFIcon, PollIcon, SmileyIcon, PlanIcon, LocationIcon} from "./icons";
 import Button from "./UI/Button";
 import {useState} from "react";
+import {Tweet} from "@/types";
 
-const TweetComposer = () => {
+type addTweet = (tweet: Tweet) => void
+
+const TweetComposer = ({addTweet}: { addTweet: addTweet }) => {
   const [text, setText] = useState<string>("");
+
+  const onHandleClick = () => {
+    const newTweet: Tweet = {
+      id: "",
+      likes: 0,
+      minutesAgo: 0,
+      reads: 0,
+      replies: 0,
+      retweets: 0,
+      text: text,
+      user: {
+        name: "Jeroen Nelen",
+        username: "jeroentjuuhh",
+        verified: false
+      }
+
+    }
+    addTweet(newTweet)
+  }
 
   return (
     <div>
@@ -24,7 +46,9 @@ const TweetComposer = () => {
             <PlanIcon></PlanIcon>
             <LocationIcon></LocationIcon>
             <div className={"grow"}></div>
-            <Button disabled={text?.length < 1} className={"mr-4 mb-2 disabled:opacity-60"}>Tweeten</Button>
+            <Button disabled={text?.length < 1}
+                    onClick={onHandleClick}
+                    className={"mr-4 mb-2 disabled:opacity-60"}>Tweeten</Button>
           </div>
         </div>
       </div>

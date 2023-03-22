@@ -5,11 +5,11 @@ import {VerifiedIcon, ThreeDots, CommentIcon, ShareIcon} from "@/components/icon
 const Tweet = (t:Tweet) => {
   const tweet = t
   return (
-    <div className="flex w-full">
+    <div className="flex">
       <div className={"m-4"}>
         <div className={"rounded-full bg-gray-400 w-10 h-10"}></div>
       </div>
-      <div className="my-3">
+      <div className="my-3 flex-grow">
         <div className="flex flex-wrap space-x-1 items-center ">
           <div className="font-bold">{tweet.user.name}</div>
           {tweet.user.verified && <VerifiedIcon></VerifiedIcon>}
@@ -19,7 +19,7 @@ const Tweet = (t:Tweet) => {
           <div className={"grow"}></div>
           <div className={"pr-4"}><ThreeDots></ThreeDots></div>
         </div>
-        <div>
+        <div className={""}>
           {tweet.text}
         </div>
         <div className={"flex flex-wrap space-x-3 sm:space-x-10 text-gray-500 my-2"}>

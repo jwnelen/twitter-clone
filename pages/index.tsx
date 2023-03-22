@@ -7,9 +7,17 @@ import SearchBar from "@/components/searchBar";
 import Feed from "@/components/feed";
 import HomeHeader from "@/components/homeHeader";
 import WhoToFollow from "@/components/toFollow";
+import tweetData from "@/data/tweets";
+import {Tweet} from "@/types";
 
 
 export default function Home() {
+  const [tweets, setTweets] = React.useState<Tweet[]>(tweetData)
+
+  const addTweet = (tweet: Tweet) => {
+    setTweets([tweet, ...tweets])
+  }
+
   return (
     <>
       <Head>
@@ -31,8 +39,8 @@ export default function Home() {
             <div className="col-span-5 lg:col-span-3 max-w-full overflow-x-hidden">
               <div className="divide-y divide-gray-700 relative w-full">
                 <HomeHeader></HomeHeader>
-                <TweetComposer></TweetComposer>
-                <Feed></Feed>
+                <TweetComposer addTweet={addTweet}></TweetComposer>
+                <Feed tweets={tweets}></Feed>
               </div>
             </div>
             {/* TRENDING */}
