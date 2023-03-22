@@ -9,7 +9,7 @@ import {
   InboxIcon,
   TwitterBlueIcon,
   SaveIcon,
-  TreeDots,
+  ThreeDots,
   NewTweetIcon
 } from "@/components/icons";
 import React from "react";
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </span>
           </div>
           <div className={"hidden xl:block"}>
-            <TreeDots></TreeDots>
+            <ThreeDots></ThreeDots>
           </div>
         </div>
       </div>

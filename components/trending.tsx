@@ -1,5 +1,5 @@
 import React from "react";
-import {TreeDots} from "@/components/icons";
+import {ThreeDots} from "@/components/icons";
 
 interface TrendingItemProps {
   topText: string,
@@ -19,7 +19,7 @@ const TrendingItem = ({topText, hashtag, amount_tweets}: TrendingItemProps) => {
         <span className={"text-sm text-gray-400"}>{displayText}</span>
       </div>
       <div>
-        <TreeDots></TreeDots>
+        <ThreeDots></ThreeDots>
       </div>
     </div>
   )

@@ -4,7 +4,8 @@ import Tweet from "@/components/tweet";
 
 const Feed = () => {
   return (
-    <div className={"flex justify-center align-center pt-10 italic h-screen"}>
+    <div className={"h-screen divide-y divide-gray-700"}>
+      <Tweet></Tweet>
       <Tweet></Tweet>
     </div>
   )

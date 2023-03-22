@@ -1,4 +1,4 @@
-const TreeDots = () => {
+const ThreeDots = () => {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true"
          className="fill-white h-4 w-4">
@@ -9,4 +9,4 @@ const TreeDots = () => {
     </svg>
   )
 }
-export default TreeDots;
+export default ThreeDots;
