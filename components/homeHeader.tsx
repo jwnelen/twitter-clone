@@ -4,7 +4,7 @@ import {TwitterLogo} from "@/components/icons";
 
 const HomeHeader = () => {
   return (
-    <div className="sticky top-0 pt-3 backdrop-blur-xl border-b border-gray-700">
+    <div className="sticky top-0 pt-3 backdrop-blur-xl border-b border-gray-700 z-20">
       <div className={"sm:hidden flex justify-center"}>
         <TwitterLogo></TwitterLogo>
       </div>
