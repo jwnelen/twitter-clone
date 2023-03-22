@@ -16,7 +16,7 @@ export default function Home() {
         <title>Twitter Clone</title>
         <meta name="description" content="Twitter Clone"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.2.ico"/>
       </Head>
       <div className="flex w-full justify-center h-screen fixed top-0 left-0 right-0">
         <div className="font-light w-full max-w-screen-xl grid grid-cols-9 divide-x divide-gray-700">
