@@ -2,8 +2,7 @@ import {Tweet} from '@/types'
 import React from "react";
 import {VerifiedIcon, ThreeDots, CommentIcon, ShareIcon} from "@/components/icons";
 
-const Tweet = (t:Tweet) => {
-  const tweet = t
+const Tweet = (tweet: Tweet) => {
   return (
     <div className="flex">
       <div className={"m-4"}>
