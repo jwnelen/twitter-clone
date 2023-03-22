@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="overflow-y-scroll min-h-screen max-h-screen space-y-5
           flex flex-col items-end xl:items-start p-4">
         <div className={"mb-2 pr-4 xl:pr-0"}>
-          <TwitterLogo></TwitterLogo>
+          <TwitterLogo classNames={"fill-white"}></TwitterLogo>
         </div>
         <NavBarItem isActive={true} CurrentIcon={HomeIcon} text="Startpagina"></NavBarItem>
         <NavBarItem isActive={false} CurrentIcon={HashtagIcon} text="Verkennen"></NavBarItem>
