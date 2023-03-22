@@ -17,7 +17,7 @@ import React from "react";
 const NavBarItem = ({text, isActive, CurrentIcon}
                       : { text: string, isActive: boolean, CurrentIcon: () => JSX.Element }) => {
   return (
-    <div className={`text-lg flex ${isActive && "font-extrabold"}`}>
+    <div className={`text-lg flex cursor-pointer ${isActive && "font-extrabold"}`}>
       <div className={'pl-2 pr-5'}>
         <CurrentIcon></CurrentIcon>
       </div>
@@ -30,7 +30,7 @@ const NavBarItem = ({text, isActive, CurrentIcon}
 
 const Navbar = () => {
   const NewTweetButton = () => {
-    return <div className={"xl:mr-10 pt-5 xl:w-full"}>
+    return <div className={"xl:mr-10 pt-5 xl:w-full cursor-pointer"}>
       <Button className={"hidden xl:block xl:min-w-full px-5 py-3"}>Tweeten</Button>
       <Button className={"xl:hidden rounded-full pt-4 pb-4"}>
         <NewTweetIcon></NewTweetIcon>

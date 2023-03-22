@@ -21,6 +21,9 @@ import SearchIcon from "./search";
 import CrossIcon from './cross';
 import CommentIcon from "./commentIcon";
 import ShareIcon from "./share";
+import GraphIcon from "./graph";
+import RetweetIcon from "./retweet";
+import HeartIcon from "./heart";
 
 export {
   HashtagIcon,
@@ -44,5 +47,8 @@ export {
   SearchIcon,
   CrossIcon,
   CommentIcon,
-  ShareIcon
+  ShareIcon,
+  GraphIcon,
+  RetweetIcon,
+  HeartIcon
 }

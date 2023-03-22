@@ -1,6 +1,6 @@
 import {Tweet} from '@/types'
 import React from "react";
-import {VerifiedIcon, ThreeDots, CommentIcon, ShareIcon} from "@/components/icons";
+import {VerifiedIcon, ThreeDots, CommentIcon, ShareIcon, RetweetIcon, HeartIcon, GraphIcon} from "@/components/icons";
 
 const Tweet = (tweet: Tweet) => {
   return (
@@ -22,11 +22,11 @@ const Tweet = (tweet: Tweet) => {
           {tweet.text}
         </div>
         <div className={"flex flex-wrap space-x-3 sm:space-x-10 text-gray-500 my-2"}>
-          <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.replies}</span></div>
-          <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.retweets}</span></div>
-          <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.likes}</span></div>
-          <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.reads}</span></div>
-          <div><ShareIcon/></div>
+          <div className={"flex space-x-2 group hover:text-blue-500 hover:cursor-pointer"}><CommentIcon classNames={"group-hover:fill-blue-500"}/> <span>{tweet.replies}</span></div>
+          <div className={"flex space-x-2 group hover:text-green-600 hover:cursor-pointer"}><RetweetIcon classNames={"group-hover:fill-green-600"}/> <span>{tweet.retweets}</span></div>
+          <div className={"flex space-x-2 group hover:text-red-500 hover:cursor-pointer"}><HeartIcon classNames={"group-hover:fill-red-500"}/> <span>{tweet.likes}</span></div>
+          <div className={"flex space-x-2 group hover:text-blue-500 hover:cursor-pointer"}><GraphIcon classNames={"group-hover:fill-blue-500"}/> <span>{tweet.reads}</span></div>
+          <div className={"hover:cursor-pointer"}><ShareIcon classNames={"hover:fill-blue-500"}/></div>
         </div>
       </div>
     </div>
