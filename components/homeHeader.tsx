@@ -15,7 +15,10 @@ const HomeHeader = () => {
           <div className="bg-blue-500 h-1 mt-3 rounded-xl"></div>
         </div>
         <div>
-          Volgend
+          <div className="text-gray-500 font-bold">
+            Volgend
+          </div>
+          <div className="h-1 mt-3 rounded-xl"></div>
         </div>
       </div>
     </div>

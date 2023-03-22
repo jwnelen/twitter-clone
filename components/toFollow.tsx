@@ -1,14 +1,9 @@
 import React from "react";
 import Button from "@/components/UI/Button";
 import {VerifiedIcon} from "@/components/icons";
+import {User} from "@/types";
 
-interface Person {
-  name: string,
-  username: string,
-  verified: boolean,
-}
-
-const people: Person[] = [
+const people: User[] = [
   {
     name: 'Mira Murati',
     username: 'miramurati',
@@ -26,20 +21,21 @@ const people: Person[] = [
   }
 ]
 
-const PersonItem = ({person}: { person: Person }) => {
-  const {name, username} = person
+const PersonItem = ({person}: { person: User }) => {
+  const {name, username, verified} = person
 
   return (
     <div className={"flex space-x-3 hover:bg-gray-600 cursor-pointer px-4 py-2"}>
-      <div className={"rounded-full bg-darkgray-500 w-10 h-10"}></div>
+      <div className={"rounded-full bg-gray-500 w-10 h-10"}></div>
       <div className={"flex grow flex-col"}>
         <div className={"font-bold flex items-center space-x-1"}>
           <span>{name} </span>
-          <VerifiedIcon></VerifiedIcon></div>
+          {verified && <VerifiedIcon></VerifiedIcon>}
+        </div>
         <span className={"text-sm text-gray-400"}>{`@${username}`}</span>
       </div>
       <div>
-        <Button className={"bg-white text-black"}>Volgen</Button>
+        <Button className={"bg-white text-darkgray-500"}>Volgen</Button>
       </div>
     </div>
   )
