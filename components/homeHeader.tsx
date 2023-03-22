@@ -1,10 +1,14 @@
 import React from "react";
+import {TwitterLogo} from "@/components/icons";
 
 
 const HomeHeader = () => {
   return (
     <div className="sticky top-0 pt-3 backdrop-blur-xl border-b border-gray-700">
-      <div className={"text-xl font-extrabold px-4 mb-6"}>
+      <div className={"sm:hidden flex justify-center"}>
+        <TwitterLogo></TwitterLogo>
+      </div>
+      <div className={"hidden sm:block text-xl font-extrabold px-4 mb-6"}>
         Startpagina
       </div>
       <div className={"flex w-full justify-around items-center"}>

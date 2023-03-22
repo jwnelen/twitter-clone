@@ -10,7 +10,7 @@ const Tweet = (t:Tweet) => {
         <div className={"rounded-full bg-gray-400 w-10 h-10"}></div>
       </div>
       <div className="my-3">
-        <div className="flex space-x-1 items-center">
+        <div className="flex flex-wrap space-x-1 items-center ">
           <div className="font-bold">{tweet.user.name}</div>
           {tweet.user.verified && <VerifiedIcon></VerifiedIcon>}
           <div className={"text-gray-500"}>@{tweet.user.username}</div>
@@ -22,7 +22,7 @@ const Tweet = (t:Tweet) => {
         <div>
           {tweet.text}
         </div>
-        <div className={"flex space-x-14 text-gray-500 my-2"}>
+        <div className={"flex flex-wrap space-x-3 sm:space-x-10 text-gray-500 my-2"}>
           <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.replies}</span></div>
           <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.retweets}</span></div>
           <div className={"flex space-x-2"}><CommentIcon/> <span>{tweet.likes}</span></div>
