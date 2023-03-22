@@ -1,12 +1,15 @@
 import React from "react";
 import Tweet from "@/components/tweet";
-
+import tweetData from "@/data/tweets"
 
 const Feed = () => {
+  const [tweets, setTweets] = React.useState<Tweet[]>(tweetData)
+
   return (
     <div className={"h-screen divide-y divide-gray-700"}>
-      <Tweet></Tweet>
-      <Tweet></Tweet>
+      {tweets.map((t) => {
+        return <Tweet key={t.id} {...t}></Tweet>
+      })}
     </div>
   )
 }
